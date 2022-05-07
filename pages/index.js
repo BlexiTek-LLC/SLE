@@ -7,7 +7,7 @@ import Home from '../components/Landing/Home/Home'
 
 export default function Web() 
 {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(
     () =>
