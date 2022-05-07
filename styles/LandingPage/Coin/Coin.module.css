@@ -1,0 +1,60 @@
+
+
+.container
+{
+    background-image: url('https://i.ibb.co/TBCdRJT/bg.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.title
+{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 12px #FEFA8F;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: 6vh;
+}
+
+.box
+{
+    border: 2px solid #E7A044;
+    width: 60vw;
+    height: 45vh;
+    margin-left: 20vw;
+    margin-top: 5vh;
+}
+
+.currency
+{
+    color: #E7A044;
+    font-size: 6rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px)
+{
+    .title
+    {
+        font-size: 1rem;
+        margin-top: 10vh;
+    }
+
+    .box
+    {
+        width: 75vw;
+        height: 25vh;
+        margin-top: 25vh;
+        margin-left: 12vw;
+    }
+
+    .currency
+    {
+        font-size: 2rem;
+        margin-top: 10vh;
+    }
+}
