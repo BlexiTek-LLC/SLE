@@ -1,0 +1,129 @@
+
+
+.container
+{
+    background-image: url('https://i.ibb.co/TBCdRJT/bg.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+/**** Who Section ******/
+.title
+{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 12px #FEFA8F;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: 2vh;
+}
+
+.whoBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wColumn
+{
+    width: 25vw;
+    color: white;
+    text-align: center;
+    border-top: 3px solid #E7A044;
+    border-bottom: 3px solid #E7A044;
+    background: transparent radial-gradient(closest-side at 51% -35%, #131518 0%, #27282C 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 0 10px;
+}
+
+
+/******Team Section ******/
+.box
+{
+    
+}
+
+.tRow
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25vh;
+}
+
+.tColumn
+{
+    color: white;
+    width: 18vw;
+    height: 42vh;
+    margin-left: 1vw;
+    padding: 10px;
+    background: transparent linear-gradient(212deg, #4E4E54 0%, #090B0D 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+.heading
+{
+    color: white;
+    text-align: center;
+}
+
+.tInfo
+{
+    width: 16vw;
+    height: 38vh;
+    margin-left: 0.3vw;
+    border: 3px solid #E7A044;
+    border-radius: 5px;
+}
+
+.avatar
+{
+    width: 10vw;
+    height: 30vh;
+    margin-left: 2.5vw;
+}
+
+.name
+{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-top: -8vh;
+}
+
+.location
+{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+/* Small Screens */
+@media screen and (max-width: 480px )
+{
+    .container
+    {
+        background: transparent linear-gradient(212deg, #4E4E54 0%, #090B0D 100%) 0% 0% no-repeat;
+    }
+    .title
+    {
+        font-size: 1rem;
+    }
+
+    .wColumn
+    {
+        width: 75%;
+        margin-top: 10vh;
+    }
+
+    .box
+    {
+        display: none;
+    }
+
+}

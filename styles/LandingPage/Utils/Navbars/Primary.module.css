@@ -1,0 +1,105 @@
+
+
+.container
+{
+    position: sticky;
+    z-index: 58;
+} 
+
+.logoBox
+{
+    display: inline;
+}
+
+.logo
+{
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+.menu
+{
+    display: none;
+}
+
+.navs
+{
+    float: right;
+    list-style: none;
+    margin-top: 6.5vh;
+    margin-right: 25vw;
+}
+
+.nav
+{
+    float: left;
+    margin-right: 2vw;
+}
+
+.nav a
+{
+    text-align: center;
+    font: normal normal normal 20px/30px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.mNavs
+{
+    display: none;
+}
+
+/* Small Screens */
+@media screen and (max-width: 480px )
+{
+    .logo
+    {
+        width: 25vw;
+    }
+
+    .navs
+    {
+        display: none;
+    }
+
+    .menu
+    {
+        display: block;
+    }
+
+    .mNavs
+    {
+        display: block;
+        background-color: white;
+        width: 75vw;
+        height: 45vh;
+        color: black;
+        position: absolute;
+        left: 20vw;
+        z-index: 99;
+        border-radius: 5px;
+    }
+
+    .mNav
+    {
+        color: black;
+        list-style: none;
+        margin-top: 5vh;
+    }
+
+    .close
+    {
+        width: 10vw;
+        float: right;
+    }
+
+    .menu
+    {
+        width: 8vw;
+        float: right;
+        margin-top: 3vh;
+        margin-right: 5vw;
+    }
+}
+

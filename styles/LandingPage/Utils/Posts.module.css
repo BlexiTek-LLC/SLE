@@ -1,0 +1,30 @@
+
+
+.signatures
+{
+    list-style: none;
+    overflow: auto;
+    height: 18vw;
+}
+
+.signatures::-webkit-scrollbar
+{
+    display: none;
+}
+
+.signature
+{
+    border-bottom: 2px solid #F9DB98;
+    width: 40vw;
+    margin-bottom: 3vh;
+    color: white;
+}
+
+/* Small Screens */
+@media screen and (max-width: 480px )
+{
+    .signature
+    {
+        width: 70vw;
+    }
+}
