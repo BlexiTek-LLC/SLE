@@ -21,12 +21,14 @@ function SoundBar()
   return (
     <div className={style.juiceBox}>
         
-            <div className={style.music} onClick={() => handleClick()}>
+            <button className={style.music} onClick={() => handleClick()}>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
-                <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} autoPlay loop />
-            </div>
+                
+            </button>
+            
+            <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} autoPlay loop />
     </div>
   )
 }
