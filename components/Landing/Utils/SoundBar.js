@@ -25,7 +25,7 @@ function SoundBar()
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
-                <audio src='/assets/music/Dedication.mp3' ref={ref} autoPlay loop />
+                <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} autoPlay loop />
             </div>
     </div>
   )
