@@ -12,12 +12,12 @@ export default function Web()
   useEffect(
     () =>
     {
-      setLoading(false)
+      setLoading(true)
       setTimeout(
         () =>
         {
           setLoading(false);
-        }, 3000
+        }, 5000
       )
     }, []
   )

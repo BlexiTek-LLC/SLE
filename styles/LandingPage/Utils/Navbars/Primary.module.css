@@ -27,7 +27,7 @@
     float: right;
     list-style: none;
     margin-top: 6.5vh;
-    margin-right: 25vw;
+    margin-right: 38vw;
 }
 
 .nav
@@ -49,6 +49,53 @@
 {
     display: none;
 }
+
+.juiceBox
+{
+    position: absolute;
+    top: 14vh;
+    right: -2vw;
+}
+
+.music
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -5vh;
+}
+
+.bar
+{
+    display: inline-block;
+    width: 3px;
+    height: 28px;
+    background-color: #d19f3b;
+    border-radius: 10px;
+    animation: scale-up 1s linear infinite;
+}
+
+.bar:nth-child(2)
+{
+    height: 35px;
+    margin: 0 5px;
+    animation-delay: .25s;
+}
+
+.bar:nth-child(3)
+{
+    animation-delay: 5s;
+}
+
+@keyframes scale-up
+{
+    20%
+    {
+        background-color: white;
+        transform: scaleY(1.5);
+    }
+}
+
 
 /* Small Screens */
 @media screen and (max-width: 480px )

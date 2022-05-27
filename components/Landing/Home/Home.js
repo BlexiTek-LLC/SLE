@@ -8,6 +8,7 @@ import {db} from '../Utils/Configs/firebase'
 import styles from '../../../styles/LandingPage/Home/Home.module.css'
 import PrimaryNav from '../Utils/Navbars/PrimaryNav'
 import Posts from '../Utils/Posts';
+import SoundBar from '../Utils/SoundBar';
 
 function Home() 
 {
@@ -72,6 +73,7 @@ function Home()
 
         <div className={styles.column2}>
           <p className={styles.cta}>Say Something to the Student Loan Industry</p>
+          <SoundBar />
           <div className={styles.wall}>
               <form className={styles.form}>
                 <textarea className={styles.textarea}
