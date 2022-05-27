@@ -13,8 +13,7 @@ function LoadingScreen()
             <link rel="icon" href="/assets/utils/bigSleLogo.png" />
       </Head>
 
-      <img className={styles.bgIcon} src='/assets/Utils/bg.png' />
-      <img className={styles.logo} src='/assets/Utils/bigSleLogo.png' />
+      <img className={styles.logo}  src='/assets/LandingPage/rotating.gif'/>
       <p className={styles.title}>Student Loan Experiment</p>
       <p className={styles.subTitle}>Let's Take This Up A Notch</p>
     </div>

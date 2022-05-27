@@ -31,7 +31,6 @@ function PrimaryNav()
           <ul className={styles.navs}>
             <li className={styles.nav}><a href='/'>Home</a></li>
             <li className={styles.nav}><a href='/about'>About</a></li>
-            <li className={styles.nav}><a href='/coin'>SLE Coin</a></li>
             <li className={styles.nav}><a href='/works'>How It Works</a></li>
         </ul>
           :
@@ -39,7 +38,6 @@ function PrimaryNav()
             <img className={styles.close} onClick={() =>closeMenu()} src='/assets/LandingPage/close.png'/>
             <li className={styles.mNav}><a href='/'>Home</a></li>
             <li className={styles.mNav}><a href='/about'>About</a></li>
-            <li className={styles.mNav}><a href='/coin'>SLE Coin</a></li>
             <li className={styles.mNav}><a href='/works'>How It Works</a></li>
         </ul>
         }
