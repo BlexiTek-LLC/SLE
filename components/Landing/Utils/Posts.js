@@ -10,7 +10,7 @@ function Posts({post})
             post.map((item) =>
             {
                 return(
-                    <li className={styles.signature}>{item.userPost}</li>
+                    <li key={item.id} className={styles.signature}>{item.userPost}</li>
                 )
             })
         }
