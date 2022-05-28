@@ -2,7 +2,7 @@ import React from 'react'
 
 import {useState, useRef} from 'react'
 
-import style from '../../../styles/LandingPage/Utils/Navbars/Primary.module.css'
+import style from '../../../styles/LandingPage/Home/Home.module.css'
 
 function SoundBar() 
 {
@@ -25,7 +25,6 @@ function SoundBar()
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
-                
             </button>
             
             <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} autoPlay loop />

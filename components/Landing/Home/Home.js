@@ -59,7 +59,7 @@ function Home()
       </Head>
 
       <PrimaryNav />
-      <img className={styles.bg} src='/assets/Utils/bg.png' />
+  
       
       <h1 className={styles.title}>BLACK OWNED, NFT COMMUNITY COMBATTING 
       <br />
