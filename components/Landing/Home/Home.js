@@ -85,7 +85,7 @@ function Home()
                 placeholder='Email'
                 value={email}
                 onChange={() => setEmail(event.target.value)}/>
-                <a className={styles.submit} onClick={submit}>Submit</a>
+                <a className={styles.submit} onClick={submit}>Submits</a>
               </form>
 
               <Posts post={posts}/>
