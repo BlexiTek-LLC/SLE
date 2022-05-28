@@ -19,9 +19,9 @@ function SoundBar()
         }
     }
   return (
-    <div className={style.juiceBox}>
+    <div className={style.juiceBox} onClick={() => handleClick()}>
         
-            <button className={style.music} onClick={() => handleClick()}>
+            <button className={style.music} click={click}>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
