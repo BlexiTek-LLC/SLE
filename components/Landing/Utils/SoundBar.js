@@ -6,29 +6,28 @@ import style from '../../../styles/LandingPage/Home/Home.module.css'
 
 function SoundBar() 
 {
-    const music = new Audio('./assets/music/Dedication.mp3');
-    music.crossOrigin = 'anonymous';
+    const ref = useRef(null);
     const [click, setClick] = useState(false);
 
     const handleClick = () => {
         setClick(!click);
 
         if(!click){
-            music.play();
+            ref.current.play();
         }else{
-            music.pause();
+            ref.current.pause();
         }
     }
   return (
     <div className={style.juiceBox} onClick={() => handleClick()}>
         
-            <button className={style.music} click={click}>
+            <button className={style.music} >
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
             </button>
             
-            {/* <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} loop /> */}
+            <audio src='/assets/Music/Dedication.mp3' ref={ref}  loop />
     </div>
   )
 }
