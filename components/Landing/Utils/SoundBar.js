@@ -7,6 +7,7 @@ import style from '../../../styles/LandingPage/Home/Home.module.css'
 function SoundBar() 
 {
     const music = new Audio('./assets/music/Dedication.mp3');
+    music.crossOrigin = 'anonymous';
     const [click, setClick] = useState(false);
 
     const handleClick = () => {
