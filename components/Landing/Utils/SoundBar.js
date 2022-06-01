@@ -6,16 +6,16 @@ import style from '../../../styles/LandingPage/Home/Home.module.css'
 
 function SoundBar() 
 {
-    const ref = useRef(null);
+    const music = new Audio('/assets/music/Dedication.mp3');
     const [click, setClick] = useState(false);
 
     const handleClick = () => {
         setClick(!click);
 
         if(!click){
-            ref.current.play();
+            music.play();
         }else{
-            ref.current.pause();
+            music.pause();
         }
     }
   return (
@@ -27,7 +27,7 @@ function SoundBar()
                 <span className={style.bar}></span>
             </button>
             
-            <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} loop />
+            {/* <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} loop /> */}
     </div>
   )
 }
