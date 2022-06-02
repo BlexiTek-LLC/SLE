@@ -19,15 +19,15 @@ function SoundBar()
         }
     }
   return (
-    <div className={style.juiceBox}>
+    <div className={style.juiceBox} onClick={() => handleClick()}>
         
-            <button className={style.music} onClick={() => handleClick()}>
+            <button className={style.music} >
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
             </button>
             
-            <audio src='/assets/music/Dedication.mp3' crossOrigin='"anonymous"' ref={ref} loop />
+            <audio src='/assets/Music/Dedication.mp3' ref={ref}  loop />
     </div>
   )
 }

@@ -29,7 +29,8 @@
 
 .wColumn
 {
-    width: 25vw;
+    width: 20vw;
+    height: 14vh;
     color: white;
     text-align: center;
     border-top: 3px solid #E7A044;
@@ -37,70 +38,79 @@
     background: transparent radial-gradient(closest-side at 51% -35%, #131518 0%, #27282C 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     padding: 0 10px;
+    margin-top: 6.5vh;
+}
+
+.heading
+{
+    font-size: 1rem;
+}
+
+.info
+{
+    font-size: 0.7rem;
 }
 
 
 /******Team Section ******/
 .box
 {
-    
-}
-
-.tRow
-{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 25vh;
+    margin-top: 10vh;
 }
 
-.tColumn
+.tTitle
 {
     color: white;
-    width: 18vw;
-    height: 42vh;
-    margin-left: 1vw;
-    padding: 10px;
-    background: transparent linear-gradient(212deg, #4E4E54 0%, #090B0D 100%) 0% 0% no-repeat padding-box;
+    margin-top: -5vh;
+    text-align: center;
+    margin-left: 35vw;
+}
+
+.tBox
+{
+    border: #E7A044 2px solid;
+    width: 15vw;
+    height: 43vh;
     border-radius: 5px;
 }
 
-.heading
+.me
 {
-    color: white;
-    text-align: center;
+    width: 14.7vw;
+    border-radius: 5px;
+    z-index: 1;
 }
 
 .tInfo
 {
-    width: 16vw;
-    height: 38vh;
-    margin-left: 0.3vw;
-    border: 3px solid #E7A044;
-    border-radius: 5px;
-}
-
-.avatar
-{
-    width: 10vw;
-    height: 30vh;
-    margin-left: 2.5vw;
+    width: 14.8vw;
+    height: 15vh;
+    background: #E7A044;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 85;
+    position: absolute;
+    bottom: 4.5vh;
 }
 
 .name
 {
-    text-align: center;
     color: white;
     font-size: 1.3rem;
-    font-weight: bolder;
-    margin-top: -8vh;
+    text-align: center;
 }
 
-.location
+.position
 {
-    text-align: center;
+    margin-top: -1vh;
     color: white;
     font-size: 1rem;
-    font-weight: bolder;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Small Screens */
@@ -112,16 +122,35 @@
     }
     .title
     {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-top: 5vh;
     }
 
     .wColumn
     {
         width: 75%;
-        margin-top: 10vh;
+        margin-top: 2vh;
     }
 
     .box
+    {
+        display: none;
+    }
+
+    .tBox
+    {
+        width: 65vw;
+        height: 34vh;
+        flex: 0 0 auto;
+        margin-left: 6vw;
+    }
+
+    .me
+    {
+        display: none;
+    }
+
+    .tInfo
     {
         display: none;
     }

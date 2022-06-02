@@ -4,6 +4,7 @@ import Head from 'next/head'
 import PrimaryNav from '../components/Landing/Utils/Navbars/PrimaryNav'
 
 import styles from '../styles/LandingPage/Work/Work.module.css'
+import Works from '../components/Landing/How/Works'
 
 function works() {
   return (
@@ -14,6 +15,7 @@ function works() {
         <link rel="icon" href="/assets/utils/bigSleLogo.png" />
       </Head>
       <PrimaryNav />
+      <Works />
     </div>
   )
 }
