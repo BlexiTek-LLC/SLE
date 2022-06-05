@@ -48,7 +48,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 22vw;
-    height: 31vh;
+    height: 35vh;
 }
 
 .hexi2
@@ -57,9 +57,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 22vw;
-    height: 31vh;
+    height: 35vh;
 }
 
+.hextext{
+    color: #FFFFFF;
+}
+
+.hexparagraph{
+    color: #FEFA8F;
+    font-size: 15px;
+    text-align: center;
+    padding-right: 5%;
+    padding-top: 5%;
+}
 
 @media screen and (max-width: 480px)
 {
