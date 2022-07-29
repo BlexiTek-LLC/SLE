@@ -4,51 +4,24 @@ import React, {useState, useEffect} from 'react'
 import { collection, addDoc, getDocs, getDoc } from "firebase/firestore";
 import { async } from '@firebase/util';
 import {db} from '../Utils/Configs/firebase'
+import Spline from '@splinetool/react-spline';
 
 import styles from '../../../styles/LandingPage/Home/Home.module.css'
+import styled from 'styled-components';
 import PrimaryNav from '../Utils/Navbars/PrimaryNav'
-import Posts from '../Utils/Posts';
 import SoundBar from '../Utils/SoundBar';
+
+
 
 function Home() 
 {
-  const [email, setEmail] = useState('')
-  const [userPost, setUserPost] = useState('')
-  const [posts, setPosts] = useState([])
+ 
 
-  const submit = async () =>
-  {
-    event.preventDefault(event);
-      try 
-      {
-        const docRef = await addDoc(collection(db, 'Subscribe'),
-        {
-          email,
-          userPost
-        })
-        console.log("Document written with ID: ", docRef.id);
-        location.reload();  
-      } catch (error) 
-      {
-        console.error("Error adding document: ", e); 
-      }
-  }
-
-  const getPosts = () =>
-  {
-    const dbRef = collection(db, 'Subscribe');
-    getDocs(dbRef).then((data) =>
-    {
-      setPosts(data.docs.map((item) =>
-      {
-        return {...item.data(), id: item.id}
-      }))
-    })
-  }
+  
 
   useEffect(() =>
   {
-    getPosts();
+    
   }, [])
   return (
     <div className={styles.container}>
@@ -59,41 +32,103 @@ function Home()
       </Head>
 
       <PrimaryNav />
-  
-      
-      <h1 className={styles.title}>BLACK OWNED, NFT COMMUNITY COMBATTING 
-      <br />
-      STUDENT LOAN DEBT</h1>
-
-      <div className={styles.row}>
-        <div className={styles.column1}>
-          <img className={styles.avatar} src='/assets/LandingPage/avatar.png'/>
-          <p className={styles.disclaimer}>NFT Market Place Coming Soon.</p>
-        </div>
-
-        <div className={styles.column2}>
-          <p className={styles.cta}>Say Something to the Student Loan Industry</p>
-          <SoundBar />
-          <div className={styles.wall}>
-              <form className={styles.form}>
-                <textarea className={styles.textarea}
-                placeholder='Say it Here'
-                value={userPost}
-                onChange={() => setUserPost(event.target.value)}
-                />
-                <input className={styles.email}
-                placeholder='Email'
-                value={email}
-                onChange={() => setEmail(event.target.value)}/>
-                <a className={styles.submit} onClick={submit}>Submit</a>
-              </form>
-
-              <Posts post={posts}/>
-          </div>
-        </div>
-      </div>
+        <Content>
+          <h1>Black Owned, NFT Community Combating Student Loan Debt</h1>
+        </Content>
+      <Wrapper>
+        <Spline className='spline' scene="https://prod.spline.design/4M780b45hYq8uUIg/scene.splinecode" />
+      </Wrapper>
     </div>
   )
 }
+
+const Wrapper = styled.div`
+  font-size: 16px;
+  color: white;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+
+  .spline 
+  {
+    margin-left: 0;
+    margin-top: 20px;
+    z-index: 1;
+  
+  
+    
+
+    @media (max-width: 1024px)
+    {
+      transform: scale(0.8) translateX(200px);
+    }
+
+    @media (max-width: 800px)
+    {
+      transform: scale(0.7) translateX(600px);
+    }
+
+    @media (max-width: 600px)
+    {
+      transform: scale(0.5) translateX(-100px);
+      right: auto;
+      left: 50%;
+      margin-left: -600px;
+    }
+
+    @media (max-width: 400px)
+    {
+      transform: scale(0.45) translateX(-50px);
+      margin-top: 25vh;
+      
+      margin-left: -55vw;
+    }
+  }
+
+`
+
+const Content = styled.div`
+position: absolute;
+z-index: 99;
+
+@media (max-width: 400px)
+  {
+    margin-top: 10vh;
+    margin-left: -15vw;
+  }
+
+
+h1
+{
+  font-size: 2.5rem;
+  text-align: center;
+  left: 46vw;
+  top: 15vh;
+  width: 40vw;
+  position: absolute;
+  color: white;
+ 
+
+  @media (max-width: 400px)
+  {
+    font-size: 29px;
+    left: 4vw;
+    top: -4vh;
+    width: 85vw;
+    
+   
+  }
+}
+
+
+
+h1
+{
+  margin: 15px 30px 0 100px;
+}
+`
 
 export default Home
