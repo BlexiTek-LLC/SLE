@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 
-import styles from '../../../styles/LandingPage/Utils/Loading.module.css'
+import styles from '../../styles/LandingPage/Utils/Loading.module.css'
 
 function LoadingScreen() 
 {

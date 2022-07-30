@@ -6,25 +6,23 @@ import { async } from '@firebase/util';
 import {db} from '../Utils/Configs/firebase'
 import Spline from '@splinetool/react-spline';
 
-import styles from '../../../styles/LandingPage/Home/Home.module.css'
 import styled from 'styled-components';
+
 import PrimaryNav from '../Utils/Navbars/PrimaryNav'
 import SoundBar from '../Utils/SoundBar';
+import About from './About';
+import Team from './Team';
+import Melvin from './Melvin';
+import Steph from './Steph';
+import Macy from './Macy';
+import Cortez from './Cortez';
 
 
 
 function Home() 
 {
- 
-
-  
-
-  useEffect(() =>
-  {
-    
-  }, [])
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>SLE | Home</title>
         <meta name="description" content="SLE is a company built on value and innovation" />
@@ -38,6 +36,13 @@ function Home()
       <Wrapper>
         <Spline className='spline' scene="https://prod.spline.design/4M780b45hYq8uUIg/scene.splinecode" />
       </Wrapper>
+
+      <About />
+      <Team />
+      <Melvin />
+      <Steph />
+      <Macy />
+      <Cortez />
     </div>
   )
 }
@@ -82,8 +87,8 @@ const Wrapper = styled.div`
     @media (max-width: 400px)
     {
       transform: scale(0.45) translateX(-50px);
-      margin-top: 25vh;
-      
+      margin-top: 12vh;
+      margin-bottom: -20vh;
       margin-left: -55vw;
     }
   }
@@ -105,7 +110,7 @@ h1
 {
   font-size: 2.5rem;
   text-align: center;
-  left: 46vw;
+  left: 58vw;
   top: 15vh;
   width: 40vw;
   position: absolute;
@@ -114,21 +119,16 @@ h1
 
   @media (max-width: 400px)
   {
-    font-size: 29px;
-    left: 4vw;
+    font-size: 33px;
+    left: 25vw;
     top: -4vh;
     width: 85vw;
+    text-align: center;
     
    
   }
 }
 
-
-
-h1
-{
-  margin: 15px 30px 0 100px;
-}
 `
 
 export default Home

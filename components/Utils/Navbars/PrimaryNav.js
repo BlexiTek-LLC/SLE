@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
-import styles from '../../../../styles/LandingPage/Utils/Navbars/Primary.module.css'
+import styles from '../../../styles/LandingPage/Utils/Navbars/Primary.module.css'
+import SoundBar from '../SoundBar'
 
 function PrimaryNav() 
 {
@@ -12,6 +13,7 @@ function PrimaryNav()
                 <img className={styles.logo} src='/assets/Utils/logo.png'/>
             </a>
         </div> 
+        <SoundBar />
     </div>
   )
 }
