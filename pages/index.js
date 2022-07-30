@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import {useState, useEffect} from 'react'
 
-import LoadingScreen from '../components/Landing/Utils/LoadingScreen'
-import Home from '../components/Landing/Home/Home'
+import LoadingScreen from '../components/Utils/LoadingScreen'
+import Home from '../components/Home/Home'
 
 
 export default function Web() 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import {useState, useRef} from 'react'
 
-import style from '../../../styles/LandingPage/Home/Home.module.css'
+import style from '../../styles/LandingPage/Utils/Sound.module.css'
 
 function SoundBar() 
 {
@@ -22,6 +22,13 @@ function SoundBar()
     <div className={style.juiceBox} onClick={() => handleClick()}>
         
             <button className={style.music} >
+                <span className={style.bar}></span>
+                <span className={style.bar}></span>
+                <span className={style.bar}></span>
+                <span className={style.bar}></span>
+                <span className={style.bar}></span>
+                <span className={style.bar}></span>
+                <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
                 <span className={style.bar}></span>
